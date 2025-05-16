@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: linear-gradient(to right, rgb(26, 95, 26), rgb(23, 92, 81),rgb(18, 51, 69));
+        }
+        .main-heading{
+            text-align: center;
+            color: bisque;
+            margin: 10px;
+        }
+        #colorbox{
+            background-color: transparent;
+            height: 500px;
+            width: 400px;
+            position: absolute;
+            left: 30px;
+            top: 200px;
+            box-shadow: 5px 5px 10px 0px white;
+        }
+        .box2{
+            background-color: transparent;
+            height: 500px;
+            width: 400px;
+            position: absolute;
+            left: 570px;
+            top: 200px;
+            box-shadow: 5px 5px 10px 0px white;
+        }
+        .box3{
+            background-color: transparent;
+            height: 500px;
+            width: 400px;
+            position: absolute;
+            left: 1100px;
+            top: 200px;
+            box-shadow: 5px 5px 10px 0px white;
+        }
+        .photo1{
+            border: 10px ridge white;
+            margin: 40px;
+        }
+        .photo2{
+            border: 10px ridge white;
+            margin: 40px;
+            height: 200px;
+            width: 300px;
+        }
+        .photo3{
+            border: 10px ridge white;
+            margin: 40px;
+            height: 200px;
+            width: 300px;
+        }
+        .para1{
+            color: whitesmoke;
+            margin-left: 20px;
+        }
+        .para2{
+            color: whitesmoke;
+            margin-left: 20px;
+        }
+        .para3{
+            color: whitesmoke;
+            margin-left: 20px;
+        }
+        button{
+            height: 50px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div class="headingbox">
+            <h1 class="main-heading"><u>WELCOME TO MY BLOG</u></h1>
+        </div>
+        <div class="box1" id="colorbox">
+            <img src="https://img.etimg.com/thumb/msid-93546832,width-300,height-225,imgsize-71738,resizemode-75/working-women.jpg" alt="" class="photo1">
+            <p class="para1">Synergy and Enhanced Problem-Solving:<br>Effective teamwork involves individuals collaborating towards a shared goal, leveraging diverse skills and perspectives to achieve outcomes that exceed individual capabilities, fostering a supportive and efficient work environment.<br>Increased Productivity and Efficiency: </p>
+        </div>
+        <div class="box2">
+            <img src="https://media.istockphoto.com/id/1434212178/photo/middle-eastern-lady-using-laptop-working-online-sitting-in-office.jpg?s=612x612&w=0&k=20&c=Qy_dzvLEN4ks5nxnl6FbAVEvV_9pdlcaiNtCuzF7Qbk=" alt="" class="photo2">
+            <p class="para2">Increased Productivity and Efficiency:<br>Teamwork necessitates open and effective communication, which in turn builds stronger relationships, fosters trust, and leads to better decision-making.<br>Working in a team provides opportunities for learning from others, developing new skills, and expanding one's knowledge base, contributing to both personal and professional growth.  </p>
+        </div>
+        <div class="box3">
+            <img src="https://media.istockphoto.com/id/612854434/photo/success-is-a-collaborative-effort.jpg?s=612x612&w=0&k=20&c=9-s-WiLTpROzE5C5qmllkOJUldp8n5z7WctOoPjZ_kM=" alt="" class="photo3">
+            <p class="para3">Shared Responsibility and Accountability:<br>When everyone is accountable for their part in the team's success, it creates a sense of shared responsibility and commitment, leading to better outcomes.<br>A positive and supportive team environment can boost morale and job satisfaction, leading to increased motivation and engagement.  </p>
+        </div>
+    </div>
+    <button onclick="changeDivColor()">click here to change color</button>
+    <script>
+         function changeDivColor(){
+        const colors=["blue","pink","red","yellow"];
+        const randomcolor=colors[Math.floor(Math.random()*colors.length)];
+        document.getElementById("colorbox").style.backgroundColor=randomcolor;
+         }
+    </script>
+</body>
+</html>
